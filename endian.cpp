@@ -79,7 +79,7 @@ int main(int argc, char * argv[]) {
     
     // Create a temporary array to store the bytes from each word while we
     // reverse them
-    char *buffer = new char[bytesPerWord];
+    char *buffer = new char[bytesPerWord]();
     if (buffer == NULL) {
         cerr << "Error: couldn't allocate memory for the temporary byte array." << endl;
         return 1;
